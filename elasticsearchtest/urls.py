@@ -16,13 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rest_framework.routers import DefaultRouter
-from app_est.views import ConfigMenuSearchViewSet
+from app_est.views import ConfigMenuSearchViewSet, IndexRebuild
 
 router = DefaultRouter()
 router.register('api/configmenu/search', ConfigMenuSearchViewSet, basename='configmenu_search')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/index/rebuild/', IndexRebuild),
 ]
 
 urlpatterns += router.urls
