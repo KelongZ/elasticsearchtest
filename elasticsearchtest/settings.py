@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
-        'URL': 'http://127.0.0.1:9200/',    # 此处为elasticsearch运行的服务器ip地址和端口
+        'URL': 'http://kelongz.e2.luyouxia.net:27236/',    # 此处为elasticsearch运行的服务器ip地址和端口
         'INDEX_NAME': 'configmenu',           # 指定elasticserach建立的索引库名称
     },
 }
